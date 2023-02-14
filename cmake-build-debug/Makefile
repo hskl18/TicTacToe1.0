@@ -153,6 +153,54 @@ includes/app_include_test/app_include_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.s
 .PHONY : includes/app_include_test/app_include_test.cpp.s
 
+includes/button/button.o: includes/button/button.cpp.o
+.PHONY : includes/button/button.o
+
+# target to build an object file
+includes/button/button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/button.cpp.o
+.PHONY : includes/button/button.cpp.o
+
+includes/button/button.i: includes/button/button.cpp.i
+.PHONY : includes/button/button.i
+
+# target to preprocess a source file
+includes/button/button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/button.cpp.i
+.PHONY : includes/button/button.cpp.i
+
+includes/button/button.s: includes/button/button.cpp.s
+.PHONY : includes/button/button.s
+
+# target to generate assembly for a file
+includes/button/button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/button.cpp.s
+.PHONY : includes/button/button.cpp.s
+
+includes/button/buttons.o: includes/button/buttons.cpp.o
+.PHONY : includes/button/buttons.o
+
+# target to build an object file
+includes/button/buttons.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/buttons.cpp.o
+.PHONY : includes/button/buttons.cpp.o
+
+includes/button/buttons.i: includes/button/buttons.cpp.i
+.PHONY : includes/button/buttons.i
+
+# target to preprocess a source file
+includes/button/buttons.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/buttons.cpp.i
+.PHONY : includes/button/buttons.cpp.i
+
+includes/button/buttons.s: includes/button/buttons.cpp.s
+.PHONY : includes/button/buttons.s
+
+# target to generate assembly for a file
+includes/button/buttons.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/buttons.cpp.s
+.PHONY : includes/button/buttons.cpp.s
+
 includes/config/config.o: includes/config/config.cpp.o
 .PHONY : includes/config/config.o
 
@@ -176,6 +224,78 @@ includes/config/config.s: includes/config/config.cpp.s
 includes/config/config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/config/config.cpp.s
 .PHONY : includes/config/config.cpp.s
+
+includes/engine/engine.o: includes/engine/engine.cpp.o
+.PHONY : includes/engine/engine.o
+
+# target to build an object file
+includes/engine/engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/engine/engine.cpp.o
+.PHONY : includes/engine/engine.cpp.o
+
+includes/engine/engine.i: includes/engine/engine.cpp.i
+.PHONY : includes/engine/engine.i
+
+# target to preprocess a source file
+includes/engine/engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/engine/engine.cpp.i
+.PHONY : includes/engine/engine.cpp.i
+
+includes/engine/engine.s: includes/engine/engine.cpp.s
+.PHONY : includes/engine/engine.s
+
+# target to generate assembly for a file
+includes/engine/engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/engine/engine.cpp.s
+.PHONY : includes/engine/engine.cpp.s
+
+includes/header/header.o: includes/header/header.cpp.o
+.PHONY : includes/header/header.o
+
+# target to build an object file
+includes/header/header.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/header/header.cpp.o
+.PHONY : includes/header/header.cpp.o
+
+includes/header/header.i: includes/header/header.cpp.i
+.PHONY : includes/header/header.i
+
+# target to preprocess a source file
+includes/header/header.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/header/header.cpp.i
+.PHONY : includes/header/header.cpp.i
+
+includes/header/header.s: includes/header/header.cpp.s
+.PHONY : includes/header/header.s
+
+# target to generate assembly for a file
+includes/header/header.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/header/header.cpp.s
+.PHONY : includes/header/header.cpp.s
+
+includes/input_box/input_box.o: includes/input_box/input_box.cpp.o
+.PHONY : includes/input_box/input_box.o
+
+# target to build an object file
+includes/input_box/input_box.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o
+.PHONY : includes/input_box/input_box.cpp.o
+
+includes/input_box/input_box.i: includes/input_box/input_box.cpp.i
+.PHONY : includes/input_box/input_box.i
+
+# target to preprocess a source file
+includes/input_box/input_box.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.i
+.PHONY : includes/input_box/input_box.cpp.i
+
+includes/input_box/input_box.s: includes/input_box/input_box.cpp.s
+.PHONY : includes/input_box/input_box.s
+
+# target to generate assembly for a file
+includes/input_box/input_box.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.s
+.PHONY : includes/input_box/input_box.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -213,9 +333,24 @@ help:
 	@echo "... includes/app_include_test/app_include_test.o"
 	@echo "... includes/app_include_test/app_include_test.i"
 	@echo "... includes/app_include_test/app_include_test.s"
+	@echo "... includes/button/button.o"
+	@echo "... includes/button/button.i"
+	@echo "... includes/button/button.s"
+	@echo "... includes/button/buttons.o"
+	@echo "... includes/button/buttons.i"
+	@echo "... includes/button/buttons.s"
 	@echo "... includes/config/config.o"
 	@echo "... includes/config/config.i"
 	@echo "... includes/config/config.s"
+	@echo "... includes/engine/engine.o"
+	@echo "... includes/engine/engine.i"
+	@echo "... includes/engine/engine.s"
+	@echo "... includes/header/header.o"
+	@echo "... includes/header/header.i"
+	@echo "... includes/header/header.s"
+	@echo "... includes/input_box/input_box.o"
+	@echo "... includes/input_box/input_box.i"
+	@echo "... includes/input_box/input_box.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

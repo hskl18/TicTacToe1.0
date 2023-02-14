@@ -155,6 +155,7 @@ private:
                 }
             }
         }
+
         Sprite nb(t);
         window.draw(nb);
         window.display();

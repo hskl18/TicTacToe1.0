@@ -88,10 +88,40 @@
 		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/app_include_test/app_include_test.h">
 			<Option target="ttt"/>
 		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/button/button.cpp">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/button/button.h">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/button/buttons.cpp">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/button/buttons.h">
+			<Option target="ttt"/>
+		</Unit>
 		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/config/config.cpp">
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/config/config.h">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/engine/engine.cpp">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/engine/engine.h">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/header/header.cpp">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/header/header.h">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/input_box/input_box.cpp">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/input_box/input_box.h">
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/Users/ice/Projects/TicTacToeSFML/main.cpp">
