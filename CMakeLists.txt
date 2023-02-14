@@ -4,7 +4,7 @@ project(ttt)
 set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCE_FILES main.cpp)
-add_executable(ttt main.cpp)
+add_executable(ttt main.cpp includes/app_include_test/app_include_test.cpp includes/app_include_test/app_include_test.h includes/config/config.cpp includes/config/config.h)
 include_directories(/usr/local/include)
 
 find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)

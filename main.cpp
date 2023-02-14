@@ -1,5 +1,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "includes/app_include_test/app_include_test.h"
+#include "includes/config/config.h"
+
 using namespace std;
 using namespace sf;
 
@@ -116,6 +119,7 @@ private:
 
     void render(RenderWindow &window) {
         window.clear();
+        auto t=config.get_texture("0");
 
         for (int i = 0; i < GRID_SIZE; i++) {
             for (int j = 0; j < GRID_SIZE; j++) {
@@ -151,14 +155,15 @@ private:
                 }
             }
         }
-
-
-
+        Sprite nb(t);
+        window.draw(nb);
         window.display();
     }
 
 
 };
+
+
 
 int main() {
 
