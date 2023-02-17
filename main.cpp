@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "includes/config/config.h"
+#include "includes/button/button.h"
 
 using namespace std;
 using namespace sf;
@@ -27,6 +28,11 @@ public:
                 grid[i][j] = State::Empty;
             }
         }
+        Button temp("Remake", {165, 85}, 30,
+                       sf::Color::White, sf::Color::Black);
+        temp.setFont(config.get_font(ARIAL));
+        temp.setPosition({365, 400});
+        remake = temp;
     }
 
 
@@ -39,7 +45,6 @@ public:
         // run the game loop
         while (window.isOpen()) {
             handleEvents(window);
-            update(window);
             render(window);
         }
     }
@@ -47,6 +52,7 @@ public:
 private:
     State grid[GRID_SIZE][GRID_SIZE];
     State currentPlayer = State::X;
+    Button remake;
 
     bool full(){
         bool ans=true;
@@ -66,60 +72,67 @@ private:
 
         Event event;
         while (window.pollEvent(event)) {
-            switch (event.type) {
+            if (!update(window)){
+                switch (event.type) {
 
-                case Event::Closed:
-                    window.close();
-                    break;
+                    case Event::Closed:
+                        window.close();
+                        break;
 
-                case Event::MouseButtonPressed:
-                    if (event.mouseButton.button == Mouse::Left) {
-                        int row = event.mouseButton.y / CELL_SIZE;
-                        int col = event.mouseButton.x / CELL_SIZE;
-                        if (row >= 0 && row < GRID_SIZE && col >= 0 && col < GRID_SIZE && grid[row][col] == State::Empty) {
-                            grid[row][col] = currentPlayer;
-                            currentPlayer = (currentPlayer == State::X ? State::O : State::X);
+                    case Event::MouseButtonPressed:
+                        if (event.mouseButton.button == Mouse::Left) {
+                            int row = event.mouseButton.y / CELL_SIZE;
+                            int col = event.mouseButton.x / CELL_SIZE;
+                            if (row >= 0 && row < GRID_SIZE && col >= 0 && col < GRID_SIZE && grid[row][col] == State::Empty) {
+                                grid[row][col] = currentPlayer;
+                                currentPlayer = (currentPlayer == State::X ? State::O : State::X);
+                            }
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            if (update(window)){
+                if (remake.isMouseOver(window)&& event.mouseButton.button == Mouse::Left){
+                    for (int i = 0; i < GRID_SIZE; i++) {
+                        for (int j = 0; j < GRID_SIZE; j++) {
+                            grid[i][j] = State::Empty;
                         }
                     }
-                    break;
-
-                default:
-                    break;
+                }
             }
         }
     }
 
-    void update(sf::RenderWindow &window) {
+    bool update(sf::RenderWindow &window) {
         // check for a win
         for (int i = 0; i < GRID_SIZE; i++) {
             // check rows
             if (grid[i][0] != State::Empty && grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2]) {
-                std::cout << "Player " << (grid[i][0] == State::X ? "X" : "O") << " wins!" << std::endl;
-                window.close();
+                return true;
             }
             // check columns
             if (grid[0][i] != State::Empty && grid[0][i] == grid[1][i] && grid[1][i] == grid[2][i]) {
-                std::cout << "Player " << (grid[0][i] == State::X ? "X" : "O") << " wins!" << std::endl;
-                window.close();
+                return true;
             }
         }
         // check diagonals
         if (grid[0][0] != State::Empty && grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) {
-            std::cout << "Player " << (grid[0][0] == State::X ? "X" : "O") << " wins!" << std::endl;
-            window.close();
+            return true;
         }
 
         if (grid[2][0] != State::Empty && grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2]) {
-            std::cout << "Player " << (grid[2][0] == State::X ? "X" : "O") << " wins!" << std::endl;
-            window.close();
+            return true;
         }
-
+        if (full())return true;
+        return false;
     }
 
     void render(RenderWindow &window) {
         window.clear();
         auto t=config.get_texture("0");
-
         for (int i = 0; i < GRID_SIZE; i++) {
             for (int j = 0; j < GRID_SIZE; j++) {
 
@@ -154,8 +167,7 @@ private:
                 }
             }
         }
-
-        Sprite nb(t);
+        if (update(window))remake.drawTo(window);
         window.display();
     }
 };

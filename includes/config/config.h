@@ -4,9 +4,8 @@
 #include <memory>
 #include <SFML/Graphics.hpp>
 using namespace std;
-
-class Config
-{
+enum FONT{ARIAL = 0,};
+class Config{
 private:
     std::unordered_map<string, std::shared_ptr<sf::Texture>> _texture_map;
     std::unordered_map<int, std::shared_ptr<sf::Font>> _font_map;
@@ -18,13 +17,10 @@ public:
     Config();
     ~Config();
     sf::Texture& get_texture(string index) ;
-    sf::Font& get_font(int index) ;
+    sf::Font& get_font(int index);
 };
 
 
 // global instance here
 extern Config config;
-
-
-
 #endif

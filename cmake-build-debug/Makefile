@@ -129,6 +129,30 @@ ttt/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/build
 .PHONY : ttt/fast
 
+includes/button/button.o: includes/button/button.cpp.o
+.PHONY : includes/button/button.o
+
+# target to build an object file
+includes/button/button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/button.cpp.o
+.PHONY : includes/button/button.cpp.o
+
+includes/button/button.i: includes/button/button.cpp.i
+.PHONY : includes/button/button.i
+
+# target to preprocess a source file
+includes/button/button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/button.cpp.i
+.PHONY : includes/button/button.cpp.i
+
+includes/button/button.s: includes/button/button.cpp.s
+.PHONY : includes/button/button.s
+
+# target to generate assembly for a file
+includes/button/button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/includes/button/button.cpp.s
+.PHONY : includes/button/button.cpp.s
+
 includes/config/config.o: includes/config/config.cpp.o
 .PHONY : includes/config/config.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ttt"
+	@echo "... includes/button/button.o"
+	@echo "... includes/button/button.i"
+	@echo "... includes/button/button.s"
 	@echo "... includes/config/config.o"
 	@echo "... includes/config/config.i"
 	@echo "... includes/config/config.s"

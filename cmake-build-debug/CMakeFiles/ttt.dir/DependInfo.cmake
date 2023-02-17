@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/ice/Projects/TicTacToeSFML/includes/button/button.cpp" "CMakeFiles/ttt.dir/includes/button/button.cpp.o" "gcc" "CMakeFiles/ttt.dir/includes/button/button.cpp.o.d"
   "/Users/ice/Projects/TicTacToeSFML/includes/config/config.cpp" "CMakeFiles/ttt.dir/includes/config/config.cpp.o" "gcc" "CMakeFiles/ttt.dir/includes/config/config.cpp.o.d"
   "/Users/ice/Projects/TicTacToeSFML/main.cpp" "CMakeFiles/ttt.dir/main.cpp.o" "gcc" "CMakeFiles/ttt.dir/main.cpp.o.d"
   )

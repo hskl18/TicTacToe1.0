@@ -11,7 +11,7 @@ Config::Config()
 }
 
 Config::~Config(){}
- std::shared_ptr<sf::Texture> Config::_get_texture(string key)
+std::shared_ptr<sf::Texture> Config::_get_texture(string key)
 {
     if(this->_texture_map.find(key) != this->_texture_map.end())
     {
@@ -20,7 +20,7 @@ Config::~Config(){}
     return nullptr;
 }
 
- std::shared_ptr<sf::Font> Config::_get_font(int key)
+std::shared_ptr<sf::Font> Config::_get_font(int key)
 {
     if(this->_font_map.find(key) != this->_font_map.end())
     {
@@ -29,14 +29,14 @@ Config::~Config(){}
     return nullptr;
 }
 
- sf::Texture& Config::get_texture(string index)
+sf::Texture& Config::get_texture(string index)
 {
     std::shared_ptr<sf::Texture> texture = this->_get_texture(index);
     assert(texture != nullptr && "Getting non existed texture");
     return *texture;
 }
 
- sf::Font& Config::get_font(int index)
+sf::Font& Config::get_font(int index)
 {
     std::shared_ptr<sf::Font> font = this->_get_font(index);
     assert(font != nullptr && "Getting non existed font");
@@ -46,10 +46,8 @@ Config::~Config(){}
 void Config::_set_texture()
 {
     // set texture example
-     auto t1 = std::make_shared<sf::Texture>();
-    if (t1->loadFromFile("../assets/cat1.png")){
-        std::cout<<"good";
-    }
+    auto t1 = std::make_shared<sf::Texture>();
+    t1->loadFromFile("../assets/cat1.png");
     this->_texture_map.insert({"0",t1});
 
 }
@@ -60,6 +58,6 @@ void Config::_set_font()
 //
     auto f1 = std::make_shared<sf::Font>();
     f1->loadFromFile("../assets/arial.ttf");
-    this->_font_map[0] = f1;
+    this->_font_map[ARIAL] = f1;
 
 }

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/button/button.cpp">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/button/button.h">
+			<Option target="ttt"/>
+		</Unit>
 		<Unit filename="/Users/ice/Projects/TicTacToeSFML/includes/config/config.cpp">
 			<Option target="ttt"/>
 		</Unit>
