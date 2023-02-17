@@ -83,24 +83,10 @@ CMakeFiles/ttt.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/main.cpp -o CMakeFiles/ttt.dir/main.cpp.s
 
-CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o: /Users/ice/Projects/TicTacToeSFML/includes/app_include_test/app_include_test.cpp
-CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o: CMakeFiles/ttt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o -MF CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o.d -o CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o -c /Users/ice/Projects/TicTacToeSFML/includes/app_include_test/app_include_test.cpp
-
-CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ice/Projects/TicTacToeSFML/includes/app_include_test/app_include_test.cpp > CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.i
-
-CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/includes/app_include_test/app_include_test.cpp -o CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.s
-
 CMakeFiles/ttt.dir/includes/config/config.cpp.o: CMakeFiles/ttt.dir/flags.make
 CMakeFiles/ttt.dir/includes/config/config.cpp.o: /Users/ice/Projects/TicTacToeSFML/includes/config/config.cpp
 CMakeFiles/ttt.dir/includes/config/config.cpp.o: CMakeFiles/ttt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ttt.dir/includes/config/config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt.dir/includes/config/config.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ttt.dir/includes/config/config.cpp.o -MF CMakeFiles/ttt.dir/includes/config/config.cpp.o.d -o CMakeFiles/ttt.dir/includes/config/config.cpp.o -c /Users/ice/Projects/TicTacToeSFML/includes/config/config.cpp
 
 CMakeFiles/ttt.dir/includes/config/config.cpp.i: cmake_force
@@ -111,98 +97,16 @@ CMakeFiles/ttt.dir/includes/config/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/includes/config/config.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/includes/config/config.cpp -o CMakeFiles/ttt.dir/includes/config/config.cpp.s
 
-CMakeFiles/ttt.dir/includes/header/header.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/includes/header/header.cpp.o: /Users/ice/Projects/TicTacToeSFML/includes/header/header.cpp
-CMakeFiles/ttt.dir/includes/header/header.cpp.o: CMakeFiles/ttt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ttt.dir/includes/header/header.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ttt.dir/includes/header/header.cpp.o -MF CMakeFiles/ttt.dir/includes/header/header.cpp.o.d -o CMakeFiles/ttt.dir/includes/header/header.cpp.o -c /Users/ice/Projects/TicTacToeSFML/includes/header/header.cpp
-
-CMakeFiles/ttt.dir/includes/header/header.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/includes/header/header.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ice/Projects/TicTacToeSFML/includes/header/header.cpp > CMakeFiles/ttt.dir/includes/header/header.cpp.i
-
-CMakeFiles/ttt.dir/includes/header/header.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/includes/header/header.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/includes/header/header.cpp -o CMakeFiles/ttt.dir/includes/header/header.cpp.s
-
-CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o: /Users/ice/Projects/TicTacToeSFML/includes/input_box/input_box.cpp
-CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o: CMakeFiles/ttt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o -MF CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o.d -o CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o -c /Users/ice/Projects/TicTacToeSFML/includes/input_box/input_box.cpp
-
-CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ice/Projects/TicTacToeSFML/includes/input_box/input_box.cpp > CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.i
-
-CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/includes/input_box/input_box.cpp -o CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.s
-
-CMakeFiles/ttt.dir/includes/engine/engine.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/includes/engine/engine.cpp.o: /Users/ice/Projects/TicTacToeSFML/includes/engine/engine.cpp
-CMakeFiles/ttt.dir/includes/engine/engine.cpp.o: CMakeFiles/ttt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ttt.dir/includes/engine/engine.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ttt.dir/includes/engine/engine.cpp.o -MF CMakeFiles/ttt.dir/includes/engine/engine.cpp.o.d -o CMakeFiles/ttt.dir/includes/engine/engine.cpp.o -c /Users/ice/Projects/TicTacToeSFML/includes/engine/engine.cpp
-
-CMakeFiles/ttt.dir/includes/engine/engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/includes/engine/engine.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ice/Projects/TicTacToeSFML/includes/engine/engine.cpp > CMakeFiles/ttt.dir/includes/engine/engine.cpp.i
-
-CMakeFiles/ttt.dir/includes/engine/engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/includes/engine/engine.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/includes/engine/engine.cpp -o CMakeFiles/ttt.dir/includes/engine/engine.cpp.s
-
-CMakeFiles/ttt.dir/includes/button/button.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/includes/button/button.cpp.o: /Users/ice/Projects/TicTacToeSFML/includes/button/button.cpp
-CMakeFiles/ttt.dir/includes/button/button.cpp.o: CMakeFiles/ttt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ttt.dir/includes/button/button.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ttt.dir/includes/button/button.cpp.o -MF CMakeFiles/ttt.dir/includes/button/button.cpp.o.d -o CMakeFiles/ttt.dir/includes/button/button.cpp.o -c /Users/ice/Projects/TicTacToeSFML/includes/button/button.cpp
-
-CMakeFiles/ttt.dir/includes/button/button.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/includes/button/button.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ice/Projects/TicTacToeSFML/includes/button/button.cpp > CMakeFiles/ttt.dir/includes/button/button.cpp.i
-
-CMakeFiles/ttt.dir/includes/button/button.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/includes/button/button.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/includes/button/button.cpp -o CMakeFiles/ttt.dir/includes/button/button.cpp.s
-
-CMakeFiles/ttt.dir/includes/button/buttons.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/includes/button/buttons.cpp.o: /Users/ice/Projects/TicTacToeSFML/includes/button/buttons.cpp
-CMakeFiles/ttt.dir/includes/button/buttons.cpp.o: CMakeFiles/ttt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ttt.dir/includes/button/buttons.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ttt.dir/includes/button/buttons.cpp.o -MF CMakeFiles/ttt.dir/includes/button/buttons.cpp.o.d -o CMakeFiles/ttt.dir/includes/button/buttons.cpp.o -c /Users/ice/Projects/TicTacToeSFML/includes/button/buttons.cpp
-
-CMakeFiles/ttt.dir/includes/button/buttons.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/includes/button/buttons.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ice/Projects/TicTacToeSFML/includes/button/buttons.cpp > CMakeFiles/ttt.dir/includes/button/buttons.cpp.i
-
-CMakeFiles/ttt.dir/includes/button/buttons.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/includes/button/buttons.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ice/Projects/TicTacToeSFML/includes/button/buttons.cpp -o CMakeFiles/ttt.dir/includes/button/buttons.cpp.s
-
 # Object files for target ttt
 ttt_OBJECTS = \
 "CMakeFiles/ttt.dir/main.cpp.o" \
-"CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o" \
-"CMakeFiles/ttt.dir/includes/config/config.cpp.o" \
-"CMakeFiles/ttt.dir/includes/header/header.cpp.o" \
-"CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o" \
-"CMakeFiles/ttt.dir/includes/engine/engine.cpp.o" \
-"CMakeFiles/ttt.dir/includes/button/button.cpp.o" \
-"CMakeFiles/ttt.dir/includes/button/buttons.cpp.o"
+"CMakeFiles/ttt.dir/includes/config/config.cpp.o"
 
 # External object files for target ttt
 ttt_EXTERNAL_OBJECTS =
 
 ttt: CMakeFiles/ttt.dir/main.cpp.o
-ttt: CMakeFiles/ttt.dir/includes/app_include_test/app_include_test.cpp.o
 ttt: CMakeFiles/ttt.dir/includes/config/config.cpp.o
-ttt: CMakeFiles/ttt.dir/includes/header/header.cpp.o
-ttt: CMakeFiles/ttt.dir/includes/input_box/input_box.cpp.o
-ttt: CMakeFiles/ttt.dir/includes/engine/engine.cpp.o
-ttt: CMakeFiles/ttt.dir/includes/button/button.cpp.o
-ttt: CMakeFiles/ttt.dir/includes/button/buttons.cpp.o
 ttt: CMakeFiles/ttt.dir/build.make
 ttt: /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib
 ttt: /opt/homebrew/lib/libsfml-audio.2.5.1.dylib
@@ -210,7 +114,7 @@ ttt: /opt/homebrew/lib/libsfml-network.2.5.1.dylib
 ttt: /opt/homebrew/lib/libsfml-window.2.5.1.dylib
 ttt: /opt/homebrew/lib/libsfml-system.2.5.1.dylib
 ttt: CMakeFiles/ttt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ttt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ttt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ttt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

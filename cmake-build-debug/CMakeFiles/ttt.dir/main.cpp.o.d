@@ -495,8 +495,6 @@ CMakeFiles/ttt.dir/main.cpp.o: /Users/ice/Projects/TicTacToeSFML/main.cpp \
   /opt/homebrew/include/SFML/Graphics/VertexBuffer.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/istream \
-  /Users/ice/Projects/TicTacToeSFML/includes/app_include_test/app_include_test.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iomanip \
   /Users/ice/Projects/TicTacToeSFML/includes/config/config.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__hash_table \

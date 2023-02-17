@@ -1,6 +1,5 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "includes/app_include_test/app_include_test.h"
 #include "includes/config/config.h"
 
 using namespace std;
@@ -157,14 +156,9 @@ private:
         }
 
         Sprite nb(t);
-        window.draw(nb);
         window.display();
     }
-
-
 };
-
-
 
 int main() {
 
