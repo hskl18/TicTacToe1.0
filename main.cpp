@@ -36,7 +36,6 @@ public:
 
     void run() {
         // create the window
-
         RenderWindow window(VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Tic Tac Toe");
         window.setFramerateLimit(60);
 
@@ -48,7 +47,7 @@ public:
     }
 
 private:
-    State grid[GRID_SIZE][GRID_SIZE];
+    State grid[GRID_SIZE][GRID_SIZE]{};
     State currentPlayer = State::X;
     Button remake;
 
@@ -68,7 +67,7 @@ private:
 
     void handleEvents(RenderWindow &window) {
 
-        Event event;
+        Event event{};
         while (window.pollEvent(event)) {
 
             switch (event.type) {
@@ -172,7 +171,6 @@ private:
 };
 
 int main() {
-
     TicTacToe game;
     game.run();
 
