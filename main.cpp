@@ -17,8 +17,6 @@ enum class State {
     O
 };
 
-
-
 class TicTacToe {
 public:
     TicTacToe() {
@@ -72,28 +70,29 @@ private:
 
         Event event;
         while (window.pollEvent(event)) {
-            if (!update(window)){
-                switch (event.type) {
 
-                    case Event::Closed:
-                        window.close();
-                        break;
+            switch (event.type) {
 
-                    case Event::MouseButtonPressed:
-                        if (event.mouseButton.button == Mouse::Left) {
-                            int row = event.mouseButton.y / CELL_SIZE;
-                            int col = event.mouseButton.x / CELL_SIZE;
-                            if (row >= 0 && row < GRID_SIZE && col >= 0 && col < GRID_SIZE && grid[row][col] == State::Empty) {
-                                grid[row][col] = currentPlayer;
-                                currentPlayer = (currentPlayer == State::X ? State::O : State::X);
-                            }
+                case Event::Closed:
+                    window.close();
+                    break;
+
+                case Event::MouseButtonPressed:
+                    if (update(window))break;
+                    if (event.mouseButton.button == Mouse::Left) {
+                        int row = event.mouseButton.y / CELL_SIZE;
+                        int col = event.mouseButton.x / CELL_SIZE;
+                        if (row >= 0 && row < GRID_SIZE && col >= 0 && col < GRID_SIZE && grid[row][col] == State::Empty) {
+                            grid[row][col] = currentPlayer;
+                            currentPlayer = (currentPlayer == State::X ? State::O : State::X);
                         }
-                        break;
+                    }
+                    break;
 
-                    default:
-                        break;
-                }
+                default:
+                    break;
             }
+
             if (update(window)){
                 if (remake.isMouseOver(window)&& event.mouseButton.button == Mouse::Left){
                     for (int i = 0; i < GRID_SIZE; i++) {
