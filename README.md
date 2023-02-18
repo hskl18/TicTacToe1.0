@@ -14,7 +14,7 @@ link goes here
 link goes here
 
 
-## Design: 
+## Design
 https://github.com/hanbintan2003/TicTacToeSFML/blob/main/design.txt
 
 
