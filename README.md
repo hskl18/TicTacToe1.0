@@ -14,9 +14,8 @@ link goes here
 link goes here
 
 
-## Design
-change the repo name:
-Can be found in https://github.com/Serenity0204/CPP_TEMPLATE/blob/master/design.txt
+## Design: 
+https://github.com/hanbintan2003/TicTacToeSFML/blob/main/design.txt
 
 
 ## Features
