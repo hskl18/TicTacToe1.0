@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.24)
-project(ttt)
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+project(TTT)
 
 #. . . . . . . . . . . . . . . . . . . .
 include(GNUInstallDirs)
@@ -24,21 +24,51 @@ endif()
 #. . . . . . . . . . . . . . . . . . . .
 
 # ------------------------------------
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
+)
 
-set(CMAKE_CXX_STANDARD 17)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 
-set(SOURCE_FILES main.cpp)
-add_executable(ttt
-        main.cpp
-        includes/config/config.cpp
-        includes/config/config.h
-        includes/button/button.cpp
-        includes/button/button.h)
+# GoogleTest requires at least C++11
+set(CMAKE_CXX_STANDARD 11)
+ 
+enable_testing() 
 
-include_directories(/usr/local/include)
 
-find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
+# ------------------------------------
 
-include_directories(${SFML_INCLUDE_DIRS})
+set(SFML_VERSION "2.5.1")
 
-target_link_libraries(ttt sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
+# Declare SFML as an external project
+FetchContent_Declare(
+  SFML
+  URL https://www.sfml-dev.org/files/SFML-${SFML_VERSION}-sources.zip
+)
+
+# Build SFML as part of the project
+FetchContent_MakeAvailable(SFML)
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#   Grab all cpp files from includes folder
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+set(INCLUDES_FOLDER includes)
+FILE(GLOB_RECURSE SOURCE_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}   "${INCLUDES_FOLDER}/*.cpp" )
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+
+ADD_EXECUTABLE(main
+    main.cpp
+    ${SOURCE_FILES}
+)
+
+
+TARGET_LINK_LIBRARIES(main gtest)
+TARGET_LINK_LIBRARIES(main sfml-graphics sfml-window sfml-system)
+## copy resources file to build
+file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
