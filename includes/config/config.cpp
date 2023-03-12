@@ -1,5 +1,6 @@
 #include <iostream>
 #include "config.h"
+#include <cassert>
 
 Config config = Config();
 Config::Config()
