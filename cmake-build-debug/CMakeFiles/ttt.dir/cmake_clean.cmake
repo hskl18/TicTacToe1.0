@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ttt.dir/includes/config/config.cpp.o.d"
   "CMakeFiles/ttt.dir/main.cpp.o"
   "CMakeFiles/ttt.dir/main.cpp.o.d"
-  "ttt"
-  "ttt.pdb"
+  "bin/ttt"
+  "bin/ttt.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

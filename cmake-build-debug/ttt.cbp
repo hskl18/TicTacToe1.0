@@ -18,8 +18,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="ttt">
-				<Option output="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/ttt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug"/>
+				<Option output="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/bin/ttt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -40,8 +40,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="ttt/fast">
-				<Option output="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/ttt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug"/>
+				<Option output="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/bin/ttt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ice/Projects/TicTacToeSFML/cmake-build-debug/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>

@@ -162,6 +162,11 @@
 			"path" : "/Users/ice/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/ice/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake"
+		},
+		{
 			"isExternal" : true,
 			"path" : "/opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake"
 		},
