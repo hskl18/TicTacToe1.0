@@ -10,6 +10,7 @@ const int WINDOW_WIDTH = 900;
 const int WINDOW_HEIGHT = 900;
 const int GRID_SIZE = 3;
 const int CELL_SIZE = WINDOW_WIDTH / GRID_SIZE;
+//default
 
 enum class State {
     Empty,
@@ -20,14 +21,16 @@ enum class State {
 class TicTacToe {
 public:
     TicTacToe() {
-        // initialize the grid
-        for (int i = 0; i < GRID_SIZE; i++) {
-            for (int j = 0; j < GRID_SIZE; j++) {
-                grid[i][j] = State::Empty;
+        // initialize the grid that all empty
+        for (auto & i : grid) {
+            for (auto & j : i) {
+                j = State::Empty;
             }
         }
+        cout<<"Game Begins."<<endl;
+
         Button temp("Remake", {165, 85}, 30,
-                       sf::Color::White, sf::Color::Black);
+                       Color::White, Color::Black);
         temp.setFont(config.get_font(ARIAL));
         temp.setPosition({365, 400});
         remake = temp;
@@ -49,13 +52,14 @@ public:
 private:
     State grid[GRID_SIZE][GRID_SIZE]{};
     State currentPlayer = State::X;
+    //first player
     Button remake;
 
     bool full(){
         bool ans=true;
-        for (int i = 0; i < GRID_SIZE; i++) {
-            for (int j = 0; j < GRID_SIZE; j++) {
-                if (grid[i][j] == State::Empty){
+        for (auto & i : grid) {
+            for (auto & j : i) {
+                if (j == State::Empty){
                     ans= false;
                     break;
                 }
@@ -66,16 +70,12 @@ private:
     }
 
     void handleEvents(RenderWindow &window) {
-
         Event event{};
         while (window.pollEvent(event)) {
-
             switch (event.type) {
-
                 case Event::Closed:
                     window.close();
                     break;
-
                 case Event::MouseButtonPressed:
                     if (update(window))break;
                     if (event.mouseButton.button == Mouse::Left) {
@@ -87,16 +87,14 @@ private:
                         }
                     }
                     break;
-
                 default:
                     break;
             }
-
             if (update(window)){
                 if (remake.isMouseOver(window)&& event.mouseButton.button == Mouse::Left){
-                    for (int i = 0; i < GRID_SIZE; i++) {
-                        for (int j = 0; j < GRID_SIZE; j++) {
-                            grid[i][j] = State::Empty;
+                    for (auto & i : grid) {
+                        for (auto & j : i) {
+                            j = State::Empty;
                         }
                     }
                 }
@@ -130,7 +128,6 @@ private:
 
     void render(RenderWindow &window) {
         window.clear();
-        auto t=config.get_texture("0");
         for (int i = 0; i < GRID_SIZE; i++) {
             for (int j = 0; j < GRID_SIZE; j++) {
 
@@ -140,22 +137,39 @@ private:
                 cell.setOutlineThickness(5);
                 cell.setOutlineColor(Color::Black);
                 window.draw(cell);
+                //to draw the layout
 
                 CircleShape c(CELL_SIZE/3);
                 c.setFillColor(Color::Transparent);
                 c.setOutlineThickness(10);
                 c.setOutlineColor(Color::Black);
 
-                CircleShape s(CELL_SIZE/3+6,4);
-                s.setFillColor(sf::Color::Transparent);
-                s.setOutlineThickness(10);
-                s.setOutlineColor(sf::Color::Black);
+                RectangleShape s(Vector2f(260, 1));
+                s.rotate(45);
+                s.setFillColor(Color::Black);
+                s.setOutlineThickness(6);
+                s.setOutlineColor(Color::Black);
 
+                RectangleShape ss(Vector2f(260, 1));
+                ss.rotate(135);
+                ss.setFillColor(Color::Black);
+                ss.setOutlineThickness(6);
+                ss.setOutlineColor(Color::Black);
+
+//                CircleShape s(CELL_SIZE/3+6,4);
+//                s.setFillColor(Color::Transparent);
+//                s.setOutlineThickness(10);
+//                s.setOutlineColor(Color::Black);
+
+                //to draw by the order of event-handler
                 switch (grid[i][j]) {
                     case State::X:
-                        s.setPosition(j * CELL_SIZE +45, i * CELL_SIZE +45);
+                        s.setPosition(j * CELL_SIZE +60, i * CELL_SIZE +60);
+                        ss.setPosition(j * CELL_SIZE +240, i * CELL_SIZE +60);
                         window.draw(s);
+                        window.draw(ss);
                         break;
+
                     case State::O:
                         c.setPosition(j * CELL_SIZE + 50, i * CELL_SIZE + 50);
                         window.draw(c);
