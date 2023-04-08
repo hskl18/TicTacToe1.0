@@ -4,8 +4,8 @@ Tic Tac Toe is a classic game where two players take turns marking Xs and Os on 
 
 For this project, we will be creating a Tic Tac Toe game using the SFML library in C++. The game will have the following operations:
 
-* operation 1
-* operation 2
+* Operation 1: Initialize the game board
+* Operation 2: Play the game by taking turns and checking for a win or a tie
 
 
 ## Demo
@@ -23,5 +23,4 @@ https://github.com/hanbintan2003/TicTacToeSFML/blob/main/design.txt
 
 ## Features
 
-- feature 1
-- feature 2
+- A user-friendly interface with clear instructions and buttons to restart the game or quit.
