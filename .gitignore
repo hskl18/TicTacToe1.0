@@ -68,18 +68,19 @@ Thumbs.db
 
 # Binaries
 # --------
-root/
 *.dll
 *.exe
-.vscode/*
+
+.vscode/
 CMakeCache.txt
 CMakeFiles/
 bin/
 build/
 cmake_install.cmake
 googletest/
+
 .vs
 out/
 build/other/
 
-
+cmake-build-debug/
