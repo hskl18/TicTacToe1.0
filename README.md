@@ -1,6 +1,8 @@
 
 # Tic Tac Toe
-Project Description goes here
+Tic Tac Toe is a classic game where two players take turns marking Xs and Os on a 3x3 grid. The objective is to be the first player to get three of their symbols in a row, either horizontally, vertically, or diagonally.
+
+For this project, we will be creating a Tic Tac Toe game using the SFML library in C++. The game will have the following operations:
 
 * operation 1
 * operation 2
@@ -8,8 +10,8 @@ Project Description goes here
 
 ## Demo
 use this to generate image link: https://postimages.org/
-* Demo 1
-link goes here
+- Game Play
+   ![game-demo.png](./image/gamePlay.png)
 * Tie
 link goes here
 
