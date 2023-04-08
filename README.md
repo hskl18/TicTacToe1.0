@@ -9,9 +9,9 @@ For this project, we will be creating a Tic Tac Toe game using the SFML library 
 
 
 ## Demo
-use this to generate image link: https://postimages.org/
 - Game Play
    ![gamePlay.png](./image/gamePlay.png)
+   
 - Restart 
    ![Remake.png](./image/Remake.png)
 
