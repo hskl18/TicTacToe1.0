@@ -13,6 +13,7 @@ For this project, we will be creating a Tic Tac Toe game using the SFML library 
    ![gamePlay.png](./image/gamePlay.png)
    
 - Restart
+<br>
    ![Remake.png](./image/Remake.png)
 
 
