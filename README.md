@@ -11,11 +11,11 @@ For this project, we will be creating a Tic Tac Toe game using the SFML library 
 ## Demo
 - Game Play
 <br><br>
-   ![gamePlay.png](./image/gamePlay.png){:height="200px" width="200px"}
+   ![gamePlay.png](./image/gamePlay.png){:height="50" width="50"}
    
 - Restart
 <br><br>
-   ![Remake.png](./image/Remake.png){:height="200px" width="200px"}
+   ![Remake.png](./image/Remake.png){:height="50" width="50"}
 
 
 
